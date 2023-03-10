@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33414.496
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelBinders.MVC", "ModelBinders\ModelBinders.MVC.csproj", "{527B3550-6ACF-405C-A9B3-6B86C69ECD61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonWithFilesBindingExample", "..\Examples\JsonWithFilesBindingExample\JsonWithFilesBindingExample.csproj", "{239C77AB-C3A4-4A94-8BD3-CC2AACD8E6FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{527B3550-6ACF-405C-A9B3-6B86C69ECD61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{527B3550-6ACF-405C-A9B3-6B86C69ECD61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{527B3550-6ACF-405C-A9B3-6B86C69ECD61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{527B3550-6ACF-405C-A9B3-6B86C69ECD61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{239C77AB-C3A4-4A94-8BD3-CC2AACD8E6FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{239C77AB-C3A4-4A94-8BD3-CC2AACD8E6FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{239C77AB-C3A4-4A94-8BD3-CC2AACD8E6FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{239C77AB-C3A4-4A94-8BD3-CC2AACD8E6FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {01C0A1B8-7E53-42F8-AEBC-A85D2E3BDA95}
+	EndGlobalSection
+EndGlobal
