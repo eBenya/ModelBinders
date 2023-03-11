@@ -1,16 +1,23 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
     <Version>0.0.1</Version>
     <Authors>eBenya</Authors>
+    <PackageProjectUrl>https://github.com/eBenya/eBenya.ModelBinders/tree/master/src/ModelBinders</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/eBenya/eBenya.ModelBinders/blob/master/LICENSE.md</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/eBenya/eBenya.ModelBinders</RepositoryUrl>
+    <TargetFrameworks>net6.0;netstandard2.0;netstandard2.1</TargetFrameworks>
+    <Description>IModelBinder implementation that can map JSON model along with files.</Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.0" />
+    <PackageReference Include="System.Text.Json" Version="7.0.2" />
   </ItemGroup>
 
 </Project>

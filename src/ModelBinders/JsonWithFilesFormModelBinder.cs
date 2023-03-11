@@ -51,7 +51,7 @@ public class JsonWithFilesFormModelBinder : IModelBinder
 
 			if (propertyResult.IsModelSet)
 			{
-				// The IFormFile was sucessfully bound, assign it to the corresponding property of the model
+				// The IFormFile was successfully bound, assign it to the corresponding property of the model
 				property.PropertySetter(model, propertyResult.Model);
 			}
 			else if (property.IsBindingRequired)
