@@ -1,4 +1,5 @@
 # ModelBinder library
+### [[nuget]](https://www.nuget.org/packages/ModelBinders.MVC)
 
 Появилась нужда в возможности сопоставления с моделью атрибутов json строки и файлов, отправленных из формы.
 В поисках вариантов наткнулся на [пост](https://github.com/thomaslevesque/blog/blob/e447b45f52e2552d4bd612cec78e6be747db08ce/content/posts/2018-09-04-handling-multipart-requests-with-json-and-file-uploads-in-asp-net-core/index.md).
