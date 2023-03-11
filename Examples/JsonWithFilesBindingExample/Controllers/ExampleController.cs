@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using ModelBinders.MVC;
 
 namespace JsonWithFilesBindingExample.Controllers;
 
@@ -16,7 +17,23 @@ public class ExampleController : Controller
     [HttpPost("do-some-with-data")]
     public IActionResult DoSomethingWithThisData(ExampleRequestModel requestModel)
     {
-        return Ok("Файлы с моделью обработаны");
+        var files = new List<IFormFile>(requestModel.OtherFiles);
+        files.Add(requestModel.File);
+        
+        var fileAttributes = files.Select(f => new
+        {
+            FormName = f.Name,
+            f.FileName,
+            f.Length,
+            f.ContentType
+        });
+        
+        return Ok(new
+        {
+            FromJsonName = requestModel.Name,
+            FromJsonAge = requestModel.Age,
+            FileAttributes = fileAttributes,
+        });
     }
     
     [HttpGet("check")]
@@ -26,7 +43,7 @@ public class ExampleController : Controller
     }
 }
 
-//[ModelBinder(typeof(JsonWithFilesFormModelBinder), Name = nameof(ExampleRequestModel))]
+[ModelBinder(typeof(JsonWithFilesFormModelBinder), Name = nameof(ExampleRequestModel))]
 public record ExampleRequestModel
 {
     public string Name { get; init; }
